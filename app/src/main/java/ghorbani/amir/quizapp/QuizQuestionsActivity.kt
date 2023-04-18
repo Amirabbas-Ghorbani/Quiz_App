@@ -1,6 +1,7 @@
 package ghorbani.amir.quizapp
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -78,6 +79,11 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
         if (mCurrentPosition == mQuestionsList!!.size){
             btnSubmit?.text = "FINISH"
+            btnSubmit?.setOnClickListener {
+                val intent = Intent(this, ResultActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }else{
             btnSubmit?.text = "SUBMIT"
         }
