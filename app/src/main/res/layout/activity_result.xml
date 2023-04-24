@@ -75,5 +75,15 @@
         android:backgroundTint="@color/white"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Powered by Amir Ghorbani"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textColor="#899395"
+        />
+
 
 </LinearLayout>

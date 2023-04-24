@@ -90,6 +90,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         tvQuestion?.text = question.question
         ivImage?.setImageResource(question.image)
         progressBar?.progress = mCurrentPosition
+        progressBar?.max = mQuestionsList!!.size
         tvProgress?.text = "$mCurrentPosition/${progressBar?.max}"
         tvOptionOne?.text = question.optionOne
         tvOptionTwo?.text = question.optionTwo
